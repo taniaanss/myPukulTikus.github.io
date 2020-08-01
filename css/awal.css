@@ -1,0 +1,101 @@
+* {
+  font-family: "Font Rancho";
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 50px auto;
+  background: linear-gradient(-45deg, #f3511e, #a91a51, #234577, #0c1b65);
+  width: 100%;
+  height: 300px;
+  background-size: 400% 400%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  z-index: 1;
+  animation: linearGradient 15s ease infinite;
+}
+
+h1,
+h2 {
+  font-size: 60px;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+}
+
+h3 {
+  color: #fff;
+  text-align: center;
+  font-size: 45px;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  width: 170px;
+  background-color: transparent;
+  border-radius: 18px;
+  border: 0;
+  outline: 0;
+  color: floralwhite;
+  position: relative;
+  margin: 10px 0 10px 25px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.btn {
+  height: 50px;
+  margin: 20px;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 5px;
+  transition: all 0.2s ease;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 70px;
+  height: 70px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border-radius: 40px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.btn:active {
+  transform: scale(0.96);
+}
+
+.container {
+  width: 200px;
+  margin: 30px auto;
+}
+
+@font-face {
+  font-family: "Font Rancho";
+  src: url("../font/Rancho-Regular.ttf");
+}
+
+@keyframes linearGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

@@ -1,11 +1,11 @@
 * {
   font-family: "Font Rancho";
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
 body {
-  margin: 50px;
+  margin: 50px auto;
   background: linear-gradient(-45deg, #f3511e, #a91a51, #234577, #0c1b65);
   width: 100%;
   height: 300px;
@@ -43,7 +43,7 @@ a {
 
 .history {
   width: 60%;
-  margin: 40px auto 0 auto;
+  margin: 40px auto;
 }
 
 table {
@@ -73,6 +73,54 @@ tr {
 
 tr:nth-child(even) {
   background-color: #fff;
+}
+
+button {
+  width: 170px;
+  background-color: transparent;
+  border-radius: 18px;
+  border: 0;
+  outline: 0;
+  color: floralwhite;
+  position: absolute;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.btn {
+  height: 50px;
+  margin: 50px 0px;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  transition: all 0.2s ease;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 70px;
+  height: 70px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border-radius: 40px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.btn:active {
+  transform: scale(0.96);
+}
+
+.keluar {
+  margin-left: 200px;
 }
 
 @font-face {
@@ -106,5 +154,19 @@ tr:nth-child(even) {
   .history {
     width: 80%;
     margin: 40px auto 0 auto;
+  }
+
+  button {
+    width: 120px;
+  }
+
+  .btn {
+    height: 50px;
+    margin: 50px auto;
+    font-size: 25px;
+  }
+
+  .keluar {
+    margin-left: 140px;
   }
 }

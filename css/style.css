@@ -1,10 +1,11 @@
 * {
   font-family: "Font Rancho";
+  color: #fff;
 }
 
 h1,
 h2 {
-  font-size: 60px;
+  font-size: 40px;
   text-align: center;
   margin: 10px;
 }
@@ -14,34 +15,16 @@ h3 {
   margin: 500px auto 10px;
 }
 body {
-  margin: 50px 10px;
+  margin: 50px auto;
   background: linear-gradient(-45deg, #f3511e, #a91a51, #234577, #0c1b65);
   width: 100%;
-  height: 100%;
+  height: 30px;
   background-size: 400% 400%;
   overflow-x: hidden;
   z-index: 1;
   animation: linearGradient 15s ease infinite;
-  color: #fff;
 }
-button {
-  display: block;
-  margin: auto;
-  background: transparent;
-  border: 0;
-  outline: 0;
-  cursor: pointer;
-}
-/* 
-.header {
-  width: 200px;
-  position: absolute;
-} */
 
-.mulai span {
-  font-size: 30px;
-  color: #fff;
-}
 .container {
   width: 600px;
   margin: auto;
@@ -87,7 +70,59 @@ button {
 
 a {
   text-decoration: none;
-  color: #fff;
+  cursor: pointer;
+}
+
+button {
+  width: 170px;
+  background-color: transparent;
+  border-radius: 18px;
+  border: 0;
+  outline: 0;
+  color: floralwhite;
+  position: relative;
+  cursor: pointer;
+  text-transform: uppercase;
+  bottom: 0;
+}
+
+.btn {
+  height: 50px;
+  margin: 500px 200px 50px -370px;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  transition: all 0.2s ease;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 70px;
+  height: 70px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border-radius: 40px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.btn:active {
+  transform: scale(0.96);
+}
+
+.footer {
+  width: 300px;
+  background-color: #0c1b65;
+  position: absolute;
+  margin: 500px 0 3000px 0;
 }
 
 @keyframes linearGradient {
@@ -116,15 +151,11 @@ a {
   }
   h1,
   h2 {
-    font-size: 40px;
+    font-size: 35px;
     text-align: center;
   }
-  .mulai span {
-    font-size: 25px !important;
-    color: #fff;
-  }
   .container {
-    margin-left: -20px;
+    margin: auto;
     width: 400px;
     height: 500px;
   }
@@ -133,9 +164,14 @@ a {
     width: 200px;
     height: 150px;
   }
-  .header {
-    width: 50px;
-    position: relative;
-    margin: -20px auto 5px;
+
+  button {
+    width: 130px;
+  }
+
+  .btn {
+    height: 40px;
+    margin: 20px 80px;
+    font-size: 25px;
   }
 }

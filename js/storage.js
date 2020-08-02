@@ -55,6 +55,17 @@ function renderHistory() {
   }
 }
 
+function hapusSkor() {
+  // const hapusSkor = document.querySelector("#hapus");
+  // hapusSkor.addEventListener("click", function (event) {
+  //   localStorage.removeItem(CACHE_KEY);
+  //   historyList.innerHTML = "";
+  // });
+
+  localStorage.removeItem(CACHE_KEY);
+  historyList.innerHTML = "";
+}
+
 renderHistory();
 
 // localStorage.setItem("ayodong", "bisa");
